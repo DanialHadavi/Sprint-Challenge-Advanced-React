@@ -11,3 +11,98 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+}
+
+.navbar {
+  align-items: center;
+  border-bottom: 1px solid #b22222;
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+  padding: 0 3%;
+  width: 100%;
+  background-color: #f08080;
+  -webkit-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+  box-shadow: 0px 2px 15px -8px rgba(0, 0, 0, 0.42);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  border: 1px solid #cd5c5c;
+  border-radius: 20px;
+  width: 30vw;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  font-size: 1.5rem;
+}
+.dark-mode .cards {
+  border: 1px solid #008080;
+}
+.dark-mode__toggle {
+  background: rgb(233, 213, 255);
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.dark-mode__toggle {
+  background: rgb(158, 158, 158);
+  border-radius: 20px;
+  border: 1px solid #fcfcfcb2;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.toggle {
+  background: white;
+  border-radius: 60%;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+  background: #079213b2;
+}
+
+.dark-mode {
+  color: rgb(198, 207, 228);
+  background-color: #2f4f4f;
+}
+.dark-mode .navbar {
+  background-color: rgb(48, 52, 59);
+  border: none;
+}
+
+.card-contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
