@@ -1,6 +1,6 @@
 import React from "react";
 import App from "./App";
-import { render } from "@testing-library/react";
+import { render, fireEvent } from "@testing-library/react";
 
 test("renders without crashing", () => {
   render(<App />);
@@ -10,7 +10,12 @@ test("toggle loads dark mode", () => {
   getByTestId("toggle-element");
 });
 
-test("Get homepage title", () => {
+test("test for navigationbar title", () => {
   const { getByText } = render(<App />);
   getByText(/Women's World Cup Players/i);
+});
+test("test for dark mode button", async () => {
+  render(<App />);
+
+  fireEvent.click(document.getElementById("dark"));
 });

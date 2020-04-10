@@ -14,6 +14,7 @@ export const NavigationBar = () => {
       <h1>Women's World Cup Players </h1>
       <div className="dark-mode__toggle" data-testid="toggle-element">
         <div
+          id="dark"
           onClick={toggleDark}
           className={darkMode ? "toggle toggled" : "toggle"}
         />

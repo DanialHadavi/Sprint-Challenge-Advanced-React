@@ -29,11 +29,13 @@ class App extends React.Component {
       <div>
         <NavigationBar />
         {this.state.players.map((player) => (
-          <PlayerCard
-            key={player.id}
-            name={player.name}
-            country={player.country}
-          />
+          <div className="container">
+            <PlayerCard
+              key={player.id}
+              name={player.name}
+              country={player.country}
+            />
+          </div>
         ))}
       </div>
     );
